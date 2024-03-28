@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="text-5xl italic hover:not-italic font-bold flex justify-center m-3 hidden" id="#show2">
+        Trying Tailwind Css
+    </div>
+    <div class="flex justify-center m-3">
+        <button class="bg-blue-500 px-4 py-2 hover:bg-red-500 active:bg-yellow-500 focus:ring focus:ring-violet-300 rounded-lg text-xl text-white">Button</button>
+    </div>
+    <div class="flex justify-center m-3 bg-black text-white hidden" id="#show1">
+        <form>
+            <label class="block">
+              <span class="block text-sm font-medium text-slate-700">Email</span>
+              <input type="email" class="peer ..."/>
+              <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+                Please provide a valid email address.
+              </p>
+            </label>
+          </form>
+    </div>
+    <div>
+        <ul class="flex border-b border-gray-200 text-center">
+            <li class="flex-1">
+              <a
+                class="relative block border-t border-l border-r border-gray-200 bg-white p-4 text-sm font-medium"
+                href="#show1"
+              >
+                <span class="absolute inset-x-0 -bottom-px h-px w-full bg-white"></span>
+                Settings
+              </a>
+            </li>
+          
+            <li class="flex-1">
+              <a class="block p-4 text-sm font-medium text-gray-500" href="#show2">
+                Messages
+              </a>
+            </li>
+          </ul>
+    </div>
+    <div>
+        <ul
+  class="mb-5 flex list-none flex-col flex-wrap border-b-0 pl-0 md:flex-row"
+  role="tablist"
+  data-te-nav-ref>
+  <li role="presentation">
+    <a
+      href="#tabs-home"
+      class="my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+      data-te-toggle="pill"
+      data-te-target="#tabs-home"
+      data-te-nav-active
+      role="tab"
+      aria-controls="tabs-home"
+      aria-selected="true"
+      >Home</a
+    >
+  </li>
+  <li role="presentation">
+    <a
+      href="#tabs-profile"
+      class="focus:border-transparen my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+      data-te-toggle="pill"
+      data-te-target="#tabs-profile"
+      role="tab"
+      aria-controls="tabs-profile"
+      aria-selected="false"
+      >Profile</a
+    >
+  </li>
+  <li role="presentation">
+    <a
+      href="#tabs-messages"
+      class="my-2 block border-x-0 border-t-0 border-b-2 border-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+      data-te-toggle="pill"
+      data-te-target="#tabs-messages"
+      role="tab"
+      aria-controls="tabs-messages"
+      aria-selected="false"
+      >Messages</a
+    >
+  </li>
+  <li role="presentation">
+    <a
+      href="#tabs-contact"
+      class="disabled pointer-events-none my-2 block border-x-0 border-t-0 border-b-2 border-transparent bg-transparent px-7 pt-4 pb-3.5 text-xs font-medium uppercase leading-tight text-neutral-400 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent dark:text-neutral-600"
+      data-te-toggle="pill"
+      data-te-target="#tabs-contact"
+      role="tab"
+      aria-controls="tabs-contact"
+      aria-selected="false"
+      >Contact</a
+    >
+  </li>
+</ul>
+<div class="mb-6">
+  <div
+    class="hidden opacity-0 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+    id="tabs-home"
+    role="tabpanel"
+    aria-labelledby="tabs-home-tab"
+    data-te-tab-active>
+    Tab 1 content
+  </div>
+  <div
+    class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+    id="tabs-profile"
+    role="tabpanel"
+    aria-labelledby="tabs-profile-tab">
+    Tab 2 content
+  </div>
+  <div
+    class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+    id="tabs-messages"
+    role="tabpanel"
+    aria-labelledby="tabs-profile-tab">
+    Tab 3 content
+  </div>
+  <div
+    class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+    id="tabs-contact"
+    role="tabpanel"
+    aria-labelledby="tabs-contact-tab">
+    Tab 4 content
+  </div>
+</div>
+    </div>
+    <div class="h-[10px] w-[10px]">
+        <img src="https://wallpapers.com/images/featured/ztbad1qj8vdjqe0p.jpg" alt="">
+    </div>
+    <div class="relative mb-6" data-te-input-wrapper-init>
+        <input
+          type="text"
+          class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+          id="exampleFormControlInput2"
+          placeholder="Email address" />
+        <label
+          for="exampleFormControlInput2"
+          class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
+          >Email address
+        </label>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="border-2 m-2 shadow">HI</div>
+        <div>HI</div>
+        <div>HI</div>
+        <div>HI</div>
+        <div>HI</div>
+        <div>HI</div>
+        <div>HI</div>
+        <div>HI</div>
+        <div>HI</div>
+      </div>
+</body>
+</html>
